@@ -3,7 +3,10 @@ red - #dd3333
 white - #fafafa
 */
 
-
+/* 
+font-family: 'Roboto', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+*/
 
 /* ========================== GENERAL CODE SETUP ============================*/
 *,
@@ -69,15 +72,50 @@ header ul li{
     margin-left: 10rem;
 }
 
-/* ========================== BODY ============================*/
+/* ========================== COMMON CODE ============================*/
 
-.hero-landing{
+.btn{
+    display: block;
+    width: 28rem;
+    height: 6rem;
+    margin: 0 auto;
+    background-color: #DD3333;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 6rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* ========================== LANDING PAGE BODY ============================*/
+
+.landing__hero{
     width: 100%;
     height: 70vh;
     background-image: url(../media/b.jpg);
     background-position: center;
     background-size: cover;
-    
 }
 
+.main__header{
+    margin: 6rem 0;
+    text-align: center;
+}
 
+.main__header--title{
+    font-size: 10rem;
+    font-weight: bold;
+    margin: 0 0 5rem 0;
+    text-transform: uppercase;
+    text-align: center;
+    color: #DD3333;
+}
+
+.main__header--paragraph{
+    width: 60rem;
+    margin: 0 auto 5rem auto;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
