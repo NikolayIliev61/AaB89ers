@@ -88,11 +88,14 @@ header ul li{
     color: #fff;
 }
 
+.text-white{
+    color: #fff;
+}
 /* ========================== LANDING PAGE BODY ============================*/
 
 .landing__hero{
     width: 100%;
-    height: 70vh;
+    height: 55vh;
     background-image: url(../media/b.jpg);
     background-position: center;
     background-size: cover;
@@ -104,7 +107,7 @@ header ul li{
 }
 
 .main__header--title{
-    font-size: 10rem;
+    font-size: 7rem;
     font-weight: bold;
     margin: 0 0 5rem 0;
     text-transform: uppercase;
@@ -118,4 +121,70 @@ header ul li{
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 2rem;
     text-align: center;
+}
+
+.main__program{
+    height: 56.5rem;
+    margin-bottom: 6rem;
+    position: relative;
+    background-color: lightgreen;
+    
+}
+
+.main__program--track{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: lightpink;
+    overflow: hidden;
+}
+
+.team-name{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.vs{
+    font-size: 7rem;
+    font-weight: bold;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.first-team,
+.second-team{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+.first-team img,
+.second-team img{
+    justify-self: center;
+}
+
+.time{
+    position: absolute;
+     top: 55%; 
+     left: 50%;
+     transform: translateX(-50%);
+}
+
+.time h3{
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.place{
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform:translateX(-50%);
+}
+
+.place h3{
+    font-size: 3rem;
+    text-transform: uppercase;
 }
