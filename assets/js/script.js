@@ -2,6 +2,8 @@
 
 let program = document.querySelector('#programWrapper');
 let sliders = document.querySelector('#sliders')
+let counterPosts = 0;
+const bodyHeader = document.querySelector('#bodyHeader');
 
 // ===================== WordPress CONNECTION ====================
 
@@ -43,10 +45,11 @@ function getData(){
     // make the reponse into JSON format
     .then(response => response.json())
     .then(response => response.forEach(function(el, index){
+        
         if(el.acf.typeOfPost == 'game'){
-            console.log(el)
+            counterPosts ++;
             program.innerHTML += `
-            <div class = "game game--${index+1}" style="width:100%; height:100%; position: absolute; left:${index*100}%; top:0;">
+            <div class = "game game--${counterPosts}" style="width:100%; height:100%; position: absolute; left:${index*100}%; top:0;">
                 <div class="bg" style = "width:100%; height: 100%; position: absolute; top: 0; left: 0; background-image: url(${el.acf.background_img.url}); background-position: center; background-size: cover; filter: brightness(25%);"></div>
                 <div class="first-team" style= "position: absolute; top: 10%; left: 15%;">
                     <img style="justify-self: center" src="${el.acf.home_team_photo.sizes.thumbnail}">
@@ -81,3 +84,22 @@ function getData(){
 getData()
 
 
+// ================ BODY ==================
+
+
+bodyHeader.innerHTML = `
+
+<div class="header-wrapper">
+<img class="logo" src="assets/media/logo.png">
+<ul>
+    <li>GET STARTED</li>
+    <li>TEAMS</li>
+    <li>HISTORY</li>
+    <li>CONTACTS</li>
+    <li><i class="fab fa-facebook-square fa-lg"></i></li>
+    <li><i class="fab fa-instagram-square fa-lg"></i></li>
+</ul>
+
+</div>
+
+`;

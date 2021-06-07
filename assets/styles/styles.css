@@ -131,12 +131,21 @@ header ul li{
     
 }
 
-.main__program--track{
+.program-courosel{
     width: 100%;
     height: 100%;
     position: relative;
-    background-color: lightpink;
     overflow: hidden;
+    
+}
+
+.main__program--track{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: lightpink;
+    transition: all 0.3s;
+    
 }
 
 .team-name{
