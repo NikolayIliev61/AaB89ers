@@ -1,7 +1,7 @@
 // ===================== VARIABLES ====================
 
 let program = document.querySelector('#programWrapper');
-
+let sliders = document.querySelector('#sliders')
 
 // ===================== WordPress CONNECTION ====================
 
@@ -64,10 +64,18 @@ function getData(){
                     <h3>${el.acf.place_of_the_game}</h3>
                 </div>
             </div>
-        `
+        `;
+        if(index + 1 == 1){
+            sliders.innerHTML += `
+            <div class="rectangle rectangle-current"></div>
+        `    
+        }else{
+            sliders.innerHTML += `
+            <div class="rectangle"></div>
+        `  
+        }
         }
     }))
-
 }
 
 getData()
