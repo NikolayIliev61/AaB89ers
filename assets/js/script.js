@@ -68,7 +68,7 @@ function getData(){
                 </div>
             </div>
         `;
-        if(index + 1 == 1){
+        if(index == 0){
             sliders.innerHTML += `
             <div class="rectangle rectangle-current"></div>
         `    
@@ -83,8 +83,7 @@ function getData(){
 
 getData()
 
-
-// ================ BODY ==================
+// ================ HEADER ==================
 
 
 bodyHeader.innerHTML = `

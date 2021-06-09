@@ -35,7 +35,7 @@ body{
 
 header{
     height: 10rem;
-    background-color: #000;
+    background-color: rgba(0, 0, 0, .7);
 }
 
 .header-wrapper{
@@ -95,14 +95,31 @@ header ul li{
 
 .landing__hero{
     width: 100%;
-    height: 55vh;
+    height: 75vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
     background-image: url(../media/b.jpg);
     background-position: center;
     background-size: cover;
 }
 
+
+
 .main__header{
-    margin: 6rem 0;
+    width: 114rem;
+    margin: 40vh auto 0 auto;
+    
+    display: grid;
+}
+
+.main__header--content{
+    width: 65rem;
+    height: 40rem;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, .7);
+    justify-self: end;
     text-align: center;
 }
 
@@ -112,7 +129,7 @@ header ul li{
     margin: 0 0 5rem 0;
     text-transform: uppercase;
     text-align: center;
-    color: #DD3333;
+    color: #fafafa;
 }
 
 .main__header--paragraph{
@@ -121,14 +138,24 @@ header ul li{
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 2rem;
     text-align: center;
+    color: #fafafa;
+}
+
+main{
+    position: relative;
+    margin-top: 90vh !important;
 }
 
 .main__program{
     height: 56.5rem;
     margin-bottom: 6rem;
     position: relative;
-    background-color: lightgreen;
-    
+}
+
+.main__program h2{
+    font-size: 3.2rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
 }
 
 .program-courosel{

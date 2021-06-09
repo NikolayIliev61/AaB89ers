@@ -18,16 +18,3 @@ setTimeout(function(){
     })
 }, 1000);
 
-
-
-
-// functionality for slider
-
-// listen for click on rectangles
-// is this the current one?
-    // yes - do nothing
-    // no
-        // slide the slider
-        // remove the properties from old rectangle
-        // add the properties to new rectangle
-
