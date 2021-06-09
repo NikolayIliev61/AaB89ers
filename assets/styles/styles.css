@@ -36,7 +36,7 @@ body{
 header{
     height: 10rem;
     width: 100%;
-    background-color: rgba(0, 0, 0, .7);
+    background-color: rgba(0, 0, 0, .8);
     position: fixed;
     top: 0;
     left: 0;
@@ -78,6 +78,82 @@ header ul li{
     margin-left: 10rem;
 }
 
+/* ========================== FOOTER ============================*/
+
+
+footer{
+    width: 100%;
+    background-image: url(../media/a.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.footer{
+    width: 100%;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.footer-inner img{
+    width: 16rem;
+    height: auto;
+}
+
+.footer-inner{
+    display: grid;
+    grid-template-columns: 16rem auto auto;
+    grid-template-rows: 1fr;
+    column-gap: 5rem;
+    padding: 8rem 0;
+    color: #fafafa;
+}
+
+.footer-address{
+    align-self: center;
+}
+
+.footer-address h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.footer-some{
+    justify-self: end;
+    align-self: center;
+}
+
+.footer-some ul{
+    list-style: none;
+}
+
+.footer-some ul>*:not(:last-child){
+    margin-bottom: 3rem;
+}
+
+.copyrights{
+    height: 8rem;
+    background-color: #DD3333;
+    color: white;
+}
+
+.copyrights-wrapper{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 2rem;
+}
+
+.copyrights-wrapper h3{
+    color: #fafafa;
+    font-size: 2rem;
+}
+
+.copyrights-wrapper h3:nth-child(1){
+    justify-self: start;
+}
+
+.copyrights-wrapper h3:nth-child(2){
+    justify-self: end;
+}
 /* ========================== COMMON CODE ============================*/
 
 .btn{
@@ -121,16 +197,15 @@ header ul li{
 
 .main__header{
     width: 114rem;
-    margin: 40vh auto 0 auto;
+    margin: 45vh auto 0 auto;
     
     display: grid;
 }
 
 .main__header--content{
-    width: 65rem;
-    height: 40rem;
-    padding: 2rem;
-    background-color: rgba(0, 0, 0, .7);
+    width: 70rem;
+    padding: 5rem;
+    background-color: rgba(0, 0, 0, .8);
     justify-self: end;
     text-align: center;
 }
@@ -155,12 +230,12 @@ header ul li{
 
 main{
     position: relative;
-    margin-top: 90vh !important;
+    margin-top: 110vh !important;
 }
 
 .main__program{
     
-    margin-bottom: 10rem;
+    margin-bottom: 12.5rem;
     position: relative;
 }
 
@@ -284,7 +359,7 @@ main{
 /* INSTAGRAM FEED */
 
 .main__insta-feed{
-    margin-bottom: 10rem;
+    margin-bottom: 12.5rem;
 }
 
 .main__insta-feed--wrapper{
@@ -305,7 +380,7 @@ main{
 /* SPONSORS */
 
 .main__sponsors{
-    margin-bottom: 10rem;
+    margin-bottom: 12.5rem;
 }
 
 .main__sponsors--wrapper{

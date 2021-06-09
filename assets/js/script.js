@@ -105,7 +105,7 @@ bodyHeader.innerHTML = `
 `;
 
 footer.innerHTML= `
-    <div class="wrapper">
+    <div class="footer-inner wrapper">
         <div>
             <img class="logo" src="assets/media/logo.png">
         </div>
@@ -116,13 +116,15 @@ footer.innerHTML= `
         </div>
         <div class='footer-some'>
             <ul>
-                <li><i class="fab fa-facebook-square fa-lg"></i></li>
-                <li><i class="fab fa-instagram-square fa-lg"></i></li>
+                <li><i class="fab fa-facebook-square fa-3x"></i></li>
+                <li><i class="fab fa-instagram-square fa-3x"></i></li>
             </ul>
         </div>
     </div>
-    <div class = 'copyrights' >
-        <h3>Copyright of mmdi0920/Group2</h3>
-        <h3>Member of the Danish American Football Association</h3>
+    <div class = 'copyrights'>
+        <div class= 'copyrights-wrapper wrapper'>
+            <h3>Copyright of mmdi0920/Group2</h3>
+            <h3>Member of the Danish American Football Association</h3>
+        </div>
     </div>
 `;
