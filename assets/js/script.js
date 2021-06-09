@@ -4,6 +4,7 @@ let program = document.querySelector('#programWrapper');
 let sliders = document.querySelector('#sliders')
 let counterPosts = 0;
 const bodyHeader = document.querySelector('#bodyHeader');
+const footer = document.querySelector('#footer')
 
 // ===================== WordPress CONNECTION ====================
 
@@ -89,17 +90,39 @@ getData()
 bodyHeader.innerHTML = `
 
 <div class="header-wrapper">
-<img class="logo" src="assets/media/logo.png">
-<ul>
-    <li>GET STARTED</li>
-    <li>TEAMS</li>
-    <li>HISTORY</li>
-    <li>CONTACTS</li>
-    <li><i class="fab fa-facebook-square fa-lg"></i></li>
-    <li><i class="fab fa-instagram-square fa-lg"></i></li>
-</ul>
+    <img class="logo" src="assets/media/logo.png">
+    <ul>
+        <li>GET STARTED</li>
+        <li>TEAMS</li>
+        <li>HISTORY</li>
+        <li>CONTACTS</li>
+        <li><i class="fab fa-facebook-square fa-lg"></i></li>
+        <li><i class="fab fa-instagram-square fa-lg"></i></li>
+    </ul>
 
 </div>
 
 `;
 
+footer.innerHTML= `
+    <div class="wrapper">
+        <div>
+            <img class="logo" src="assets/media/logo.png">
+        </div>
+        <div class="footer-address">
+            <h3>Hornevej 2, 9220 Aalborg Øst</h3>
+            <h3>60 23 55 29</h3>
+            <h3>chairman@89ers.dk</h3>
+        </div>
+        <div class='footer-some'>
+            <ul>
+                <li><i class="fab fa-facebook-square fa-lg"></i></li>
+                <li><i class="fab fa-instagram-square fa-lg"></i></li>
+            </ul>
+        </div>
+    </div>
+    <div class = 'copyrights' >
+        <h3>Copyright of mmdi0920/Group2</h3>
+        <h3>Member of the Danish American Football Association</h3>
+    </div>
+`;

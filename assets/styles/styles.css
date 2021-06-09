@@ -35,13 +35,19 @@ body{
 
 header{
     height: 10rem;
+    width: 100%;
     background-color: rgba(0, 0, 0, .7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
 }
 
 .header-wrapper{
     width: 130rem;
     margin: 0 auto;
-    display: flex;flex-direction: row;
+    display: flex;
+    
     justify-content: space-between;
     align-items: center;
 }
@@ -90,6 +96,12 @@ header ul li{
 
 .text-white{
     color: #fff;
+}
+
+.subtitle{
+        font-size: 3.2rem;
+        margin-bottom: 5rem;
+        text-transform: uppercase;
 }
 /* ========================== LANDING PAGE BODY ============================*/
 
@@ -147,22 +159,18 @@ main{
 }
 
 .main__program{
-    height: 56.5rem;
-    margin-bottom: 6rem;
+    
+    margin-bottom: 10rem;
     position: relative;
 }
 
-.main__program h2{
-    font-size: 3.2rem;
-    margin-bottom: 5rem;
-    text-transform: uppercase;
-}
+
 
 .program-courosel{
     width: 100%;
-    height: 100%;
+    height: 50rem !important;
     position: relative;
-    overflow: hidden;
+    overflow-x: hidden;
     
 }
 
@@ -181,10 +189,10 @@ main{
 }
 
 .vs{
-    font-size: 7rem;
+    font-size: 9rem;
     font-weight: bold;
     position: absolute;
-    top: 20%;
+    top: 22%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -262,8 +270,8 @@ main{
 }
 
 .rectangle {
-    width: 8rem;
-    height: 7px;
+    width: 10rem;
+    height: 1.2rem;
     background-color: none;
     border: .5px solid #fff;
     display: inline-block;
@@ -271,4 +279,47 @@ main{
 
 .rectangle-current{
     background-color: #fff !important;
+}
+
+/* INSTAGRAM FEED */
+
+.main__insta-feed{
+    margin-bottom: 10rem;
+}
+
+.main__insta-feed--wrapper{
+    width: 92rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: .5rem;
+}
+
+.insta{
+    width: 30rem;
+    height: 30rem;
+    border: 1px solid black;
+}
+
+/* SPONSORS */
+
+.main__sponsors{
+    margin-bottom: 10rem;
+}
+
+.main__sponsors--wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 10rem;
+}
+
+.sponsor{
+    width: 20rem;
+    height: 20rem;
+    justify-self: center;
+    align-self: center;
+    border-radius: 50%;
+    border: 1px solid black;
 }
