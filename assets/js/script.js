@@ -4,7 +4,8 @@ let program = document.querySelector('#programWrapper');
 let sliders = document.querySelector('#sliders')
 let counterPosts = 0;
 const bodyHeader = document.querySelector('#bodyHeader');
-const footer = document.querySelector('#footer')
+const footer = document.querySelector('#footer');
+
 
 // ===================== WordPress CONNECTION ====================
 
@@ -90,19 +91,86 @@ getData()
 bodyHeader.innerHTML = `
 
 <div class="header-wrapper">
-    <img class="logo" src="assets/media/logo.png">
+    <a href="index.html"><img class="logo" src="assets/media/logo.png"></a>
     <ul>
-        <li>GET STARTED</li>
-        <li>TEAMS</li>
-        <li>HISTORY</li>
-        <li>CONTACTS</li>
-        <li><i class="fab fa-facebook-square fa-lg"></i></li>
-        <li><i class="fab fa-instagram-square fa-lg"></i></li>
+        <li id="getStarted">GET STARTED</li>
+        <li id="teams">TEAMS</li>
+        <li><a href="history.html">HISTORY</a></li>
+        <li><a href="contacts.html">CONTACTS</a></li>
+        <li><a href="#"><i class="fab fa-facebook-square fa-lg"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram-square fa-lg"></i></a></li>
     </ul>
-
+</div>
+<div class="drop-down-menus wrapper">
+    <div class="get-started-menu hide" id='getStartedDropdown'>
+        <ul>
+            <li><a href="signup.html">Sign up</a></li>
+            <li><a href="schedule.html">Training schedule</a></li>
+            <li><a href="#">Equipment guide</a></li>
+            <li><a href="#">Injuries</a></li>
+            <li><a href="#">Doping policy</a></li>
+            <li><a href="#">GDPR</a></li>
+        </ul>    
+    </div>
+    <div class="teams-menu hide" id='teamsDropdwon'>
+        <ul>
+            <li><a href="#">National League Team</a></li>
+            <li><a href="#">Seniour II Team</a></li>
+            <li><a href="#">Woman Team</a></li>
+            <li><a href="#">U19 Team</a></li>
+            <li><a href="#">U16 Team</a></li>
+            <li><a href="#">U10, 12 & 14 Teams</a></li>
+        </ul>  
+    </div>
 </div>
 
 `;
+
+const getStarted = document.querySelector('#getStarted')
+const getStartedDropdown = document.querySelector('#getStartedDropdown');
+const teams = document.querySelector('#teams')
+const teamsDropdown = document.querySelector('#teamsDropdwon')
+
+getStarted.addEventListener('mouseover', function(){
+    getStartedDropdown.classList.remove('hide');
+});
+
+getStartedDropdown.addEventListener('mouseover', function(){
+    getStartedDropdown.classList.remove('hide');
+})
+
+getStarted.addEventListener('mouseout', function(){
+    getStartedDropdown.classList.add('hide');
+});
+
+getStartedDropdown.addEventListener('mouseout', function(){
+    getStartedDropdown.classList.add('hide');
+})
+
+
+// teams dropdown
+
+teams.addEventListener('mouseover', function(){
+    teamsDropdown.classList.remove('hide');
+});
+
+teamsDropdown.addEventListener('mouseover', function(){
+    teamsDropdown.classList.remove('hide');
+})
+
+teams.addEventListener('mouseout', function(){
+    teamsDropdown.classList.add('hide');
+});
+
+teamsDropdown.addEventListener('mouseout', function(){
+    teamsDropdown.classList.add('hide');
+})
+
+
+
+
+// ================ FOOTER ==================
+
 
 footer.innerHTML= `
     <div class="footer-inner wrapper">

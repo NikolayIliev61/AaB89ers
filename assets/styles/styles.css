@@ -1,3 +1,5 @@
+
+
 /* black #000000 
 red - #dd3333 
 white - #fafafa
@@ -47,7 +49,6 @@ header{
     width: 130rem;
     margin: 0 auto;
     display: flex;
-    
     justify-content: space-between;
     align-items: center;
 }
@@ -70,13 +71,75 @@ header ul li{
     font-size: 2rem;
 }
 
-.header-wrapper ul>*:not(:first-child){
-    margin-left: 2rem;
+.header-wrapper ul> li{
+    padding: 4rem 1rem;
 }
+
+/* .header-wrapper ul>*:not(:first-child){
+    margin-left: 2rem;
+} */
 
 .header-wrapper ul li:nth-child(5){
     margin-left: 10rem;
 }
+
+.drop-down-menus {
+    position: relative;
+    flex-direction: row;
+    margin-top: -2rem;
+}
+
+.get-started-menu{
+    position: absolute;
+    top: 0;
+    width: 25rem;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.teams-menu{
+    position: absolute;
+    top: 0;
+    right: 12rem;
+    width: 30rem;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.drop-down-menus div ul li{
+    width: 100%;
+}
+
+.drop-down-menus div ul li a{
+    display: inline-block;
+    width: 100%;
+}
+
+.drop-down-menus div ul li a:hover{
+    background-color: #fafafa;
+    color: black;
+}
+
+.get-started-menu{
+    right: 31.5rem;
+}
+
+.drop-down-menus div{
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+}
+
+.drop-down-menus div li a{
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fafafa;
+}
+
+.drop-down-menus div ul >*{
+    padding: 1rem 0;
+}
+
+
 
 /* ========================== FOOTER ============================*/
 
@@ -90,7 +153,7 @@ footer{
 
 .footer{
     width: 100%;
-    background-color: rgba(0, 0, 0, .7);
+    background-color: rgba(0, 0, 0, .8);
 }
 
 .footer-inner img{
@@ -179,31 +242,43 @@ footer{
         margin-bottom: 5rem;
         text-transform: uppercase;
 }
+
+
+/* ========================== ANIMATIONS ============================*/
+
+.hide{
+    display: none !important;
+}
+
+
 /* ========================== LANDING PAGE BODY ============================*/
 
 .landing__hero{
     width: 100%;
     height: 75vh;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     z-index: -1;
     background-image: url(../media/b.jpg);
     background-position: center;
     background-size: cover;
+    
 }
-
-
 
 .main__header{
-    width: 114rem;
-    margin: 45vh auto 0 auto;
-    
+    width: 114rem;    
+    height: 100%;
+    margin: 0 auto;
     display: grid;
+    position: relative;
 }
 
-.main__header--content{
+.main__header--content-landing{
     width: 70rem;
+    height: auto;
+    position: absolute;
+    bottom: -20%;
     padding: 5rem;
     background-color: rgba(0, 0, 0, .8);
     justify-self: end;
@@ -223,18 +298,19 @@ footer{
     width: 60rem;
     margin: 0 auto 5rem auto;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 2rem;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
     text-align: center;
     color: #fafafa;
 }
 
+
 main{
     position: relative;
-    margin-top: 110vh !important;
+    margin-top: 25rem !important;
 }
 
 .main__program{
-    
     margin-bottom: 12.5rem;
     position: relative;
 }
@@ -397,4 +473,179 @@ main{
     align-self: center;
     border-radius: 50%;
     border: 1px solid black;
+}
+
+
+
+/* */
+
+
+@media screen and (max-width: 1000px){
+ .insta{
+     width: 20rem;
+     height: 20rem;
+ }
+
+ .sponsor{
+     width: 15rem;
+     height: 15rem;
+ }
+}
+
+
+
+/* ========================== SIGNUP PAGE BODY ============================*/
+
+
+
+.signup__hero{
+    width: 100%;
+    height: 75vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: url(../media/a.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.main__header--content-signup{
+    width: 70rem;
+    height: auto;
+    position: absolute;
+    bottom: -20%;
+    padding: 5rem;
+    background-color: rgba(0, 0, 0, .8);
+    justify-self: start;
+    text-align: center;
+}
+
+.signup__schedule--title{
+    margin-bottom: 5rem;
+}
+
+.signup__schedule--title h2{
+    font-size: 2.6rem ;
+    font-weight: bold;
+    margin-bottom: 1.8rem;
+}
+
+.signup__schedule--title p{
+    font-size: 2rem;
+}
+
+.signup__schedule--table{
+    margin-bottom: 12.5rem;
+}
+
+table{
+    width: 114rem;
+    border-collapse: collapse;
+	border-spacing: 0;
+}
+
+thead{
+    background-color: black;
+    color: #fafafa;
+}
+
+thead tr th:first-child{
+    color: #000;
+    background-color: 	#fafafa;
+}
+
+tbody tr td:first-child{
+    background-color: #DD3333;
+    color: #fafafa;
+}
+
+th{
+    border: 1px solid #0f0f0f;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+td{
+    border: 1px solid #0f0f0f;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.signup__place
+{
+    margin-bottom: 12.5rem;
+}
+
+.signup__place
+ h3{
+    font-size: 3.6rem;
+    margin-bottom: 1.8rem;
+}
+
+.signup__place
+ p {
+font-size: 1.8rem;
+}
+
+.singup__registration{
+    margin-bottom: 12.5rem;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.singup__registration h3{
+    font-size: 3.6rem;
+    margin-bottom: 1.8rem;
+}
+
+.singup__registration ol li{
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    margin-left: 2rem;
+}
+
+.signup__btn{
+    display: inline-block;
+    width: 20rem;
+    height: 4rem;
+    background-color: #DD3333;
+    text-align: center;
+    line-height: 4rem;
+    color: #fafafa;
+    text-decoration: none;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-top: 1.8rem;
+}
+
+.signup__withdrawal{
+    margin-bottom: 12.5rem;
+
+}
+
+.signup__withdrawal h3{
+    font-size: 3.6rem;
+    margin-bottom: 1.8rem;
+}
+
+.signup__withdrawal p{
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    width: 80rem;
+}
+
+
+
+.schedule{
+    margin-bottom: 20rem;
+}
+
+.schedule h1{
+    font-size: 7rem;
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+    text-align: end;
 }
